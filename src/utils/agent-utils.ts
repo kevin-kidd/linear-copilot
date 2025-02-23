@@ -187,10 +187,14 @@ export const createAgentInstructions = (agentType: AgentType) => {
 export const validateEnv = (env: Record<string, string | undefined>): Env => {
 	const required = [
 		"LINEAR_WEBHOOK_SECRET",
-		"MANAGER_API_KEY",
-		"BUG_API_KEY",
-		"FEATURE_API_KEY",
-		"IMPROVEMENT_API_KEY",
+		"MANAGER_LINEAR_API_KEY",
+		"BUG_LINEAR_API_KEY",
+		"FEATURE_LINEAR_API_KEY",
+		"IMPROVEMENT_LINEAR_API_KEY",
+		"UPSTASH_REDIS_URL",
+		"UPSTASH_REDIS_TOKEN",
+		"QSTASH_TOKEN",
+		"OPENAI_API_KEY",
 	];
 
 	const missing = required.filter((key) => !env[key]);
@@ -205,10 +209,12 @@ export const validateEnv = (env: Record<string, string | undefined>): Env => {
 		upstashRedisUrl: env.UPSTASH_REDIS_URL as string,
 		upstashRedisToken: env.UPSTASH_REDIS_TOKEN as string,
 		linearWebhookSecret: env.LINEAR_WEBHOOK_SECRET as string,
-		managerApiKey: env.MANAGER_API_KEY as string,
-		bugApiKey: env.BUG_API_KEY as string,
-		featureApiKey: env.FEATURE_API_KEY as string,
-		improvementApiKey: env.IMPROVEMENT_API_KEY as string,
+		managerLinearApiKey: env.MANAGER_LINEAR_API_KEY as string,
+		bugLinearApiKey: env.BUG_LINEAR_API_KEY as string,
+		featureLinearApiKey: env.FEATURE_LINEAR_API_KEY as string,
+		improvementLinearApiKey: env.IMPROVEMENT_LINEAR_API_KEY as string,
+		qstashToken: env.QSTASH_TOKEN as string,
+		openaiApiKey: env.OPENAI_API_KEY as string,
 	};
 };
 
@@ -230,13 +236,13 @@ export const initializeLinearClient = (
 export const getApiKeyForAgent = (env: Env, agentType: AgentType): string => {
 	switch (agentType) {
 		case AgentType.Manager:
-			return env.managerApiKey;
+			return env.managerLinearApiKey;
 		case AgentType.Bug:
-			return env.bugApiKey;
+			return env.bugLinearApiKey;
 		case AgentType.Feature:
-			return env.featureApiKey;
+			return env.featureLinearApiKey;
 		case AgentType.Improvement:
-			return env.improvementApiKey;
+			return env.improvementLinearApiKey;
 		default:
 			throw new Error(`Unknown agent type: ${agentType}`);
 	}
