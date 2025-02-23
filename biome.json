@@ -1,0 +1,64 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"correctness": {
+				"noUnusedVariables": "error",
+				"noUnusedFunctionParameters": "error",
+				"noUndeclaredVariables": "error",
+				"useExhaustiveDependencies": "error"
+			},
+			"suspicious": {
+				"noExplicitAny": "error",
+				"noConsoleLog": "warn",
+				"noEmptyInterface": "error"
+			},
+			"style": {
+				"useBlockStatements": "error",
+				"useTemplate": "error",
+				"useConst": "error",
+				"useNamingConvention": {
+					"level": "error",
+					"options": {
+						"strictCase": false
+					}
+				},
+				"noNonNullAssertion": "error"
+			},
+			"complexity": {
+				"noStaticOnlyClass": "error",
+				"useOptionalChain": "error",
+				"useSimplifiedLogicExpression": "error",
+				"noExcessiveCognitiveComplexity": {
+					"level": "error",
+					"options": {
+						"maxAllowedComplexity": 25
+					}
+				},
+				"useArrowFunction": "error"
+			},
+			"performance": {
+				"noDelete": "error"
+			}
+		}
+	},
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": false,
+		"indentStyle": "tab",
+		"indentWidth": 2,
+		"lineWidth": 80,
+		"ignore": []
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "double",
+			"semicolons": "always"
+		}
+	}
+}
