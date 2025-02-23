@@ -1,0 +1,12 @@
+name = "linear-upstash"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+[vars]
+UPSTASH_REDIS_URL = ""
+UPSTASH_REDIS_TOKEN = ""
+LINEAR_WEBHOOK_SECRET = ""
+MANAGER_API_KEY = ""
+BUG_API_KEY = ""
+FEATURE_API_KEY = ""
+IMPROVEMENT_API_KEY = "" 
