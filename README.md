@@ -106,6 +106,10 @@ An intelligent issue analysis system that automatically processes Linear issues 
    # Upstash Configuration
    UPSTASH_REDIS_URL=your_redis_url
    UPSTASH_REDIS_TOKEN=your_redis_token
+
+   # Agent Configuration
+   QSTASH_TOKEN=your_qstash_token
+   OPENAI_API_KEY=your_openai_api_key
    ```
 
 ### Development
