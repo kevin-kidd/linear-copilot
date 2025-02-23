@@ -10,6 +10,9 @@ An intelligent issue analysis system that automatically processes Linear issues 
 [![Upstash](https://img.shields.io/badge/Upstash-Workflow-purple)](https://upstash.com/)
 [![Code Style: Biome](https://img.shields.io/badge/Code_Style-Biome-blue)](https://biomejs.dev/)
 
+  > [!CAUTION]
+  > This project is currently in beta and under active development - while functional, it may contain bugs or exhibit unexpected behavior, so consider starting with a test workspace before using in important projects.
+
 ## 📑 Table of Contents
 
 - [✨ Features](#-features)
