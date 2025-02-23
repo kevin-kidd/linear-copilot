@@ -1,0 +1,48 @@
+{
+	"name": "linear_upstash",
+	"module": "index.ts",
+	"type": "module",
+	"scripts": {
+		"dev": "wrangler dev",
+		"deploy": "wrangler deploy",
+		"lint": "biome check .",
+		"lint:fix": "biome check --apply .",
+		"format": "biome format .",
+		"format:fix": "biome format --write .",
+		"check": "biome check . && biome format .",
+		"fix": "biome check --apply-unsafe . && biome format --write .",
+		"typecheck": "tsc --noEmit",
+		"test": "bun test",
+		"test:watch": "bun test --watch",
+		"prepare": "husky",
+		"precommit": "lint-staged && tsc --noEmit"
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx}": ["biome check", "biome format --check"]
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/bun": "latest",
+		"@types/node": "^20.0.0",
+		"husky": "^9.0.0",
+		"lint-staged": "^15.0.0",
+		"typescript": "^5.0.0",
+		"wrangler": "^3.0.0"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"@hono/node-server": "^1.13.8",
+		"@langchain/community": "^0.3.32",
+		"@linear/sdk": "^38.0.0",
+		"@upstash/redis": "^1.34.4",
+		"@upstash/workflow": "^0.2.9",
+		"duck-duck-scrape": "^2.2.7",
+		"hono": "^4.7.2",
+		"zod": "^3.24.2"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	}
+}
