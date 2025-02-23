@@ -1,5 +1,5 @@
 {
-	"name": "linear_upstash",
+	"name": "linear-copilot",
 	"module": "index.ts",
 	"type": "module",
 	"scripts": {
