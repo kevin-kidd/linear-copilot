@@ -126,7 +126,7 @@ An intelligent issue analysis system that automatically processes Linear issues 
 
 4. Your webhook endpoint will be available at:
 
-   ```http
+   ```bash
    https://<your-worker>.<your-subdomain>.workers.dev/
    ```
 
