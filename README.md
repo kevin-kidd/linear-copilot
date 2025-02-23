@@ -5,7 +5,6 @@ An intelligent issue analysis system that automatically processes Linear issues 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
-[![Bun](https://img.shields.io/badge/Bun-Runtime-black)](https://bun.sh)
 [![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-orange.svg)](https://workers.cloudflare.com/)
 [![Linear SDK](https://img.shields.io/badge/Linear_SDK-v38-blue)](https://developers.linear.app/)
 [![Upstash](https://img.shields.io/badge/Upstash-Workflow-purple)](https://upstash.com/)
