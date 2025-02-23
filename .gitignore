@@ -12,6 +12,7 @@ lerna-debug.log*
 
 wrangler.toml
 .husky
+bun.lockb
 
 # Caches
 
