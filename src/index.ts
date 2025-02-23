@@ -18,10 +18,12 @@ export interface Env {
 	upstashRedisUrl: string;
 	upstashRedisToken: string;
 	linearWebhookSecret: string;
-	managerApiKey: string;
-	bugApiKey: string;
-	featureApiKey: string;
-	improvementApiKey: string;
+	managerLinearApiKey: string;
+	bugLinearApiKey: string;
+	featureLinearApiKey: string;
+	improvementLinearApiKey: string;
+	qstashToken: string;
+	openaiApiKey: string;
 }
 
 interface WebhookRequest {
@@ -85,10 +87,13 @@ export default serve(async (context) => {
 	// Initialize clients step
 	const clients = await context.run("initialize-clients", async () => {
 		return {
-			manager: initializeLinearClient(env.managerApiKey, "manager"),
-			bug: initializeLinearClient(env.bugApiKey, "bug"),
-			feature: initializeLinearClient(env.featureApiKey, "feature"),
-			improvement: initializeLinearClient(env.improvementApiKey, "improvement"),
+			manager: initializeLinearClient(env.managerLinearApiKey, "manager"),
+			bug: initializeLinearClient(env.bugLinearApiKey, "bug"),
+			feature: initializeLinearClient(env.featureLinearApiKey, "feature"),
+			improvement: initializeLinearClient(
+				env.improvementLinearApiKey,
+				"improvement",
+			),
 		};
 	});
 
