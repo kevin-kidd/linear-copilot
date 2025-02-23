@@ -10,6 +10,30 @@ An intelligent issue analysis system that automatically processes Linear issues 
 [![Upstash](https://img.shields.io/badge/Upstash-Workflow-purple)](https://upstash.com/)
 [![Code Style: Biome](https://img.shields.io/badge/Code_Style-Biome-blue)](https://biomejs.dev/)
 
+## 📑 Table of Contents
+
+- [✨ Features](#-features)
+- [🚀 Getting Started](#-getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Development](#development)
+  - [Deployment](#deployment)
+  - [Linear Webhook Setup](#linear-webhook-setup)
+- [🔧 Architecture](#-architecture)
+  - [Agent System](#agent-system)
+  - [Analysis Tools](#analysis-tools)
+  - [Technology Stack](#technology-stack)
+  - [Workflow Steps](#workflow-steps)
+  - [Error Handling](#error-handling)
+- [📝 Usage](#-usage)
+  - [Example Workflow](#example-workflow)
+- [🔒 Security](#-security)
+- [🚨 Error Handling](#-error-handling)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
+- [🙏 Acknowledgments](#-acknowledgments)
+- [📫 Support](#-support)
+
 ## ✨ Features
 
 - 🤖 **Multi-Agent System** - Specialized agents for different types of analysis:
